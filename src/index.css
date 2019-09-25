@@ -1,8 +1,14 @@
+@font-face {
+  font-family: 'hurme_geometric_sans_hairline';
+  src: url('./fonts/hurmegeometricsans1_hairline-webfont.woff2') format('woff2'),
+       url('./fonts/hurmegeometricsans1_hairline-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'hurme_geometric_sans_hairline';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

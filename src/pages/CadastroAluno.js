@@ -27,34 +27,31 @@ export default function CadastroAluno({ history }) {
 
     return (
         <html>
-            <div class='container'>
-                <h1>
-                    Teste para o Segundo Container.
-                </h1>
-            </div>
-            <div className="cadastro-container">
-                <form onSubmit={handleSubmit}>
-                    <input
-                        placeholder="Username"
-                        value={user}
-                        onChange={ e => setUser(e.target.value)}
-                    />
-                    <input
-                        placeholder="Name"
-                        value={name}
-                        onChange={ e => setName(e.target.value)}
-                    />
-                    <input
-                        placeholder="Bio"
-                        value={bio}
-                        onChange={ e => setBio(e.target.value)}
-                    />
-                    <button type="submit">Enviar</button>
-                </form>
-
-                <div classname="list-group">
-                    <a href="/" class="list-group-item list-group-item-action">Teste</a>
-                    <a href="/" class="list-group-item list-group-item-action">Teste=-Teste</a>
+            <div class="container">
+                <div class="form-group float-label-control">
+                    <form onSubmit={handleSubmit}>
+                        <input
+                            placeholder="Username"
+                            class="form-control"
+                            value={user}
+                            onChange={ e => setUser(e.target.value)}
+                        />
+                        <input
+                            placeholder="Name"
+                            class="form-control"
+                            value={name}
+                            onChange={ e => setName(e.target.value)}
+                        />
+                        <input
+                            placeholder="Bio"
+                            class="form-control"
+                            value={bio}
+                            onChange={ e => setBio(e.target.value)}
+                        />
+                    </form>
+                    <div className='cadastro-container'>
+                        <button type="submit">Enviar</button>
+                    </div>
                 </div>
             </div>
         </html>

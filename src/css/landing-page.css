@@ -1,3 +1,9 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.7 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
 body {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -15,6 +21,7 @@ h6 {
 header.masthead {
     position: relative;
     background-color: #343a40;
+    background: url("../img/bg-masthead.jpg") no-repeat center center;
     background-size: cover;
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -97,6 +104,7 @@ header.masthead h1 {
 .call-to-action {
     position: relative;
     background-color: #343a40;
+    background: url("../img/bg-masthead.jpg") no-repeat center center;
     background-size: cover;
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -110,4 +118,9 @@ header.masthead h1 {
     top: 0;
     left: 0;
     opacity: 0.3;
+}
+
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
