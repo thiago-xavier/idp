@@ -1,0 +1,35 @@
+.cadastro-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-container form, h1 {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-container form input{
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.cadastro-container form button {
+  margin-top: 20px;
+  border: 0px;
+  border-radius: 4px;
+  height: 48px;
+  font-size: 16px;
+  background: #DF4723;
+  font-weight: bold;
+  color: #FFF;
+  cursor: pointer;
+}
