@@ -8,7 +8,7 @@ import LandingPage from './pages/LandingPage'
 
 export default function Routes() {
     return (
-        <BrowserRouter >
+        <BrowserRouter>
             <Route path = "/"exact component = { LandingPage }/>
             <BrowserRouter path = "/alunos/:id" component = { Main }/>
             <Route path = "/cadastro-aluno" component = { CadastroAluno }/>

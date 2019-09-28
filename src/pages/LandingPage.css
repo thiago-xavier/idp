@@ -12,6 +12,17 @@ h6 {
     font-weight: 700;
 }
 
+.divisao-conteudo section  {
+    height: 100vh;
+    padding: 2vw;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 header.masthead {
     position: relative;
     background-color: #343a40;

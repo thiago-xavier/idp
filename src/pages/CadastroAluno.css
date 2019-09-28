@@ -5,8 +5,7 @@
     align-items: center;
 }
 
-.container form,
-h1 {
+.container form, h1 {
     width: 100%;
     max-width: 300px;
     display: flex;
@@ -21,4 +20,15 @@ h1 {
     padding: 0 20px;
     font-size: 16px;
     color: #666;
+}
+
+.identificaForm section {
+    height: 100vh;
+    padding: 2vw;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

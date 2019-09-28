@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="IDP%20Opportunities_arquivos/bootstrap.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom fonts for this template -->
+  <link href="IDP%20Opportunities_arquivos/all.css" rel="stylesheet">
+  <link href="IDP%20Opportunities_arquivos/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="IDP%20Opportunities_arquivos/css.css" rel="stylesheet" type="text/css">
+
+  <title>IDP Opportunities</title>
+<style>@font-face {
+  font-family: 'hurme_geometric_sans_hairline';
+  src: url(/static/media/hurmegeometricsans1_hairline-webfont.251ad328.woff2) format('woff2'),
+       url(/static/media/hurmegeometricsans1_hairline-webfont.161324e8.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'hurme_geometric_sans_hairline';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}</style><style>
+*{
+  font-family: 'Muli', sans-serif;
+	padding: 0 ;
+	margin: 0 ;
+	border: 0;
+  text-decoration: none !important;
+}
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+}
+
+html{overflow-x: hidden;}
+
+
+body {
+	font-size:20px;
+	font-weight: 400;
+	background: #fff;
+    color: #606060;
+}
+
+
+h1{
+	font-weight:800;
+	font-size: 50px;
+    color: #007aa0;
+    text-transform: lowercase;
+}
+
+h5{
+    font-size: 40px;
+    font-weight:700;
+}
+
+
+
+.det-titulo::after {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 3px;
+    left: 0px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 10px auto 0 0;
+    background-color: #007aa0;
+    color: #007aa0;
+}
+
+
+
+p{
+    line-height: 26px;
+}
+
+
+
+hr{
+	width: 100%;
+	background: #c177b2;
+	text-align: center;
+	margin: 0 auto 30px auto;
+}
+
+
+strong{font-weight: 800 !important;}
+
+.py-5{padding: 50px 0;}
+
+
+/*  HEADER ------------------------------------ */
+
+
+header {
+	width: 100%;
+    margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+            
+header img {
+	width:  100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
+
+}
+
+
+
+
+/*  CONTEÚDO  ------------------------------------ */
+
+.bg-sobre{
+    background: linear-gradient(to right, #18aac3, #017da2);
+    color: #fff;
+}
+
+.titulo-sobre{
+    transform: rotate(-90deg);
+    color: #fff;
+    position: absolute;
+    bottom: 150px;
+    left: -150px;
+}
+
+
+.det-sobre::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 4px;
+    left: 0px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: -20px 0px 0 -160px;
+    background-color: #fff;
+    color: #fff;
+}
+
+.bg-img-alunos{
+    background: url(https://paulajunior.com/dev/opportunities/wp-content/uploads/2019/09/img-bg-alunos2.jpg) no-repeat left center;
+    background-size: cover;
+}
+
+
+.bg-empresas{
+    background: #e6e6e6;
+}
+
+
+.borda-inscricao{
+    border: solid 5px #007aa0; 
+    border-radius: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.titulo-inscricao{
+    color: inherit;
+}
+
+
+
+
+/*  BOTÕES ------------------------------------ */
+
+
+.bt {
+    border: solid 2px #007aa0;
+    padding: 5px 50px;
+    color: #fff !important;
+    text-align: center;
+    font-weight: 300;
+    text-transform: lowercase;
+    transition: background-color 0.5s, transform 0.5s;
+    border-radius: 100px;
+    background: #007aa0;
+    font-size: 28px;
+}
+
+.bt:hover {
+    border: solid 2px #007aa0;
+    color: #007aa0 !important;
+    background: none;
+}
+
+
+
+
+/*  FOOTER ------------------------------------ */
+
+
+.bg-mapa{
+    background: #263449;
+    color: #fff;
+    padding-top: 100px !important;
+    letter-spacing: 3px;
+}
+
+
+footer{
+	background: #808080;
+		color: #fff;
+}
+
+
+footer p{
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+
+
+}
+
+.wrap_redes_sociais{
+	margin-top: 10px;
+	width: max-content;
+}
+
+.redes_sociais{
+	float: right;
+    margin: 0 10px;
+}
+
+.id_idp{
+	float:left;
+	padding-right: 20px;
+}
+
+.redes_sociais:last-child{margin-left: 0;}
+
+
+
+/* RESPONSIVIDADE ------------------------------------------------------------- */
+
+
+@media only screen and (min-width:1366px) and (max-width:1919px) {
+}
+
+
+@media only screen and (min-width:961px) and (max-width:1365px) {
+}
+
+
+/* Estilo para tablet */
+@media only screen and (min-width:481px) and (max-width:960px) {
+    .bg-img-alunos { background-size: contain;}
+    .borda-inscricao, .det-titulo::after{width:auto;}
+}
+
+
+/* Estilo para smartphone */
+@media only screen and (max-width:480px) {
+    *{text-align: center;}
+    .titulo-sobre {transform: none; position: initial; bottom: auto; left: auto;}
+    .bg-img-alunos{background: url(https://paulajunior.com/dev/opportunities/wp-content/uploads/2019/09/img-bg-alunos2-responsivo.jpg) no-repeat top center;}
+    .borda-inscricao, .det-titulo::after{width:auto;}
+
+}</style><style>.login-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container form, h1 {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container form input{
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.login-container form input::placeholder {
+    color: #999;
+}
+
+.login-container form button {
+    margin-top: 10px;
+}
+
+.login-container form img {
+    align-items: flex-start;
+    height: 100px;
+}
+
+.login-container form button {
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;
+    background: #DF4723;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}</style><style>.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form, h1 {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.identificaForm section {
+    height: 100vh;
+    padding: 2vw;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+</style><style>body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.divisao-conteudo section  {
+    height: 100vh;
+    padding: 2vw;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+header.masthead h1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+    header.masthead h1 {
+        font-size: 3rem;
+    }
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+}
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+}
+
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+    max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+    position: relative;
+    background-color: #343a40;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}</style></head>
+
+<body cz-shortcut-listen="true">
+
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="divisao-conteudo"><header><img src="IDP%20Opportunities_arquivos/bg-header.jpg" alt="header"></header><div class="py-5 bg-sobre" id="sobre"><div class="container"><div class="row"><div class="col-md-9 ml-auto"><h1 class="titulo-sobre det-sobre mb-5 mb-md-0">Sobre</h1><p>O
+ IDP Opportunities é uma plataforma feita especialmente para os alunos 
+IDP e nossas empresas parceiras. Nela disponibilizamos oportunidades em 
+diferentes segmentos do meio jurídico para nossos alunos irem além no 
+mercado de trabalho. As empresas, por sua vez, têm a possibilidade de 
+encontrar profissionais com a qualidade IDP, perfil e competências 
+específicas. A proposta da plataforma é fortalecer as relações com 
+empresas, públicas ou privadas, para apoiar o desenvolvimento 
+profissional de alunos e também do mercado de trabalho. Na prática, 
+todos ganham. Por meio da plataforma, fortalecemos o relacionamento com 
+os escritórios e empresas parceiras, facilitando a captação direcionada 
+de estagiários e profissionais qualificados e apresentamos oportunidades
+ reais para os nossos alunos, em um trabalho constante de melhoria de 
+performance e desempenho profissional, que começa nas salas de aula, 
+passa pelas oficinas e pelo Career Center e se consolida na JobFair e no
+ IDP Opportunities. Cadastre-se e conheça!</p></div></div></div></div><div class="py-5 bg-mapa"><div class="container"><div class="row"><div class="col-md-3"><p class="m-0 text-md-right text-center"><strong>SEJA IDP</strong></p><br><p class="m-0 text-md-right text-center"><a href="http://www.idp.edu.br/cursos/graduacao/" class="text-white">GRADUAÇÃO</a></p><p class="m-0 text-md-right text-center"><a href="http://posgraduacao.idp.edu.br/" class="text-white">PÓS-GRADUAÇÃO</a></p><p class="m-0 text-md-right text-center"><a href="http://www.idp.edu.br/cursos/mestrado/" class="text-white">MESTRADO</a></p><p class="m-0 text-md-right text-center"><a href="http://doutoradodireito.idp.edu.br/" class="text-white">DOUTORADO</a></p></div><div class="col-md-5 mt-5 mt-md-0"></div><div class="col-md-4 mt-3"><div class="row"><p>Tel: (61) 3535-6565</p></div><div class="row"><a href="https://www.instagram.com/sejaidp/"><img src="IDP%20Opportunities_arquivos/a.htm" class="redes_sociais pl-2" alt="instagram-icon"></a><a href="https://www.facebook.com/sejaidp"><img src="IDP%20Opportunities_arquivos/a_002.htm" class="redes_sociais" alt="facebook-icon"></a><p class="float-left"><strong>/sejaidp</strong></p></div><div class="row mt-5"><p>SGAS Quadra 607, Módulo 49<br>Via L2 Sul, Brasília-DF<br>CEP: 70200-670</p></div></div></div></div></div><footer id="contato"><div class="container"><div class="row py-3"><div class="col-md-6 py-4 py-sm-4 py-md-0"><a href="http://www.idp.edu.br/"><img src="IDP%20Opportunities_arquivos/a_003.htm" class="id_idp" alt="idp-icon"></a></div><div class="col-md-6"><p class="float-right">IDP © 2019. TODOS OS DIREITOS RESERVADOS.</p></div></div></div></footer></div></div>
+<script src="IDP%20Opportunities_arquivos/bundle.js"></script><script src="IDP%20Opportunities_arquivos/1.js"></script><script src="IDP%20Opportunities_arquivos/main.js"></script><script src="IDP%20Opportunities_arquivos/main_002.js"></script>
+
+</body></html>

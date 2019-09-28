@@ -1,18 +1,250 @@
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
+
+*{
+  font-family: 'Muli', sans-serif;
+	padding: 0 ;
+	margin: 0 ;
+	border: 0;
+  text-decoration: none !important;
 }
 
 html, body, #root {
+  margin: 0;
   height: 100%;
 }
 
+html{overflow-x: hidden;}
+
+
 body {
-  background: #0483A7;
+	font-size:20px;
+	font-weight: 400;
+	background: #fff;
+    color: #606060;
 }
 
-body, input, button {
-  font-family: Arial, Helvetica, sans-serif;
+
+h1{
+	font-weight:800;
+	font-size: 50px;
+    color: #007aa0;
+}
+
+h1 .titulo-inscricao {
+    align-items: center;
+}
+
+h5{
+    font-size: 40px;
+    font-weight:700;
+}
+
+.det-titulo::after {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 3px;
+    left: 0px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 10px auto 0 0;
+    background-color: #007aa0;
+    color: #007aa0;
+}
+
+
+
+p{
+    line-height: 26px;
+}
+
+
+
+hr{
+	width: 100%;
+	background: #c177b2;
+	text-align: center;
+	margin: 0 auto 30px auto;
+}
+
+
+strong{font-weight: 800 !important;}
+
+.py-5{padding: 50px 0;}
+
+.py-2 .bg-mapa{
+    padding: 20px 0;
+}
+
+
+/*  HEADER ------------------------------------ */
+
+
+header {
+	width: 100%;
+    margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+            
+header img {
+	width:  100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
+
+}
+
+
+/*  CONTEÚDO  ------------------------------------ */
+
+.bg-sobre{
+    background: linear-gradient(to right, #18aac3, #017da2);
+    color: #fff;
+}
+
+.titulo-sobre{
+    transform: rotate(-90deg);
+    color: #fff;
+    position: absolute;
+    bottom: 192px;
+    left: -205px;
+}
+
+
+.det-sobre::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 4px;
+    left: 0px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: -20px 0px 0 -160px;
+    background-color: #fff;
+    color: #fff;
+}
+
+.bg-img-alunos{
+    background: url(https://paulajunior.com/dev/opportunities/wp-content/uploads/2019/09/img-bg-alunos2.jpg) no-repeat left center;
+    background-size: cover;
+}
+
+
+.bg-empresas{
+    background: #e6e6e6;
+}
+
+
+.borda-inscricao{
+    border: solid 5px #007aa0; 
+    border-radius: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.titulo-inscricao{
+    color: inherit;
+}
+
+
+
+
+/*  BOTÕES ------------------------------------ */
+
+
+.bt {
+    border: solid 2px #007aa0;
+    padding: 5px 50px;
+    color: #fff !important;
+    text-align: center;
+    font-weight: 300;
+    text-transform: lowercase;
+    -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
+    transition: background-color 0.5s, transform 0.5s;
+    border-radius: 100px;
+    background: #007aa0;
+    font-size: 28px;
+}
+
+.bt:hover {
+    border: solid 2px #007aa0;
+    color: #007aa0 !important;
+    background: none;
+}
+
+
+
+
+/*  FOOTER ------------------------------------ */
+
+
+.bg-mapa{
+    background: #263449;
+    color: #fff;
+    padding-top: 100px !important;
+    letter-spacing: 3px;
+}
+
+
+footer{
+	background: #808080;
+		color: #fff;
+}
+
+
+footer p{
+    padding: 15px 0;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+
+
+}
+
+.wrap_redes_sociais{
+	margin-top: 10px;
+	width: max-content;
+}
+
+.redes_sociais{
+	float: right;
+    margin: 0 10px;
+}
+
+.id_idp{
+	float:left;
+	padding-right: 20px;
+}
+
+.redes_sociais:last-child{margin-left: 0;}
+
+
+
+/* RESPONSIVIDADE ------------------------------------------------------------- */
+
+
+@media only screen and (min-width:1366px) and (max-width:1919px) {
+}
+
+
+@media only screen and (min-width:961px) and (max-width:1365px) {
+}
+
+
+/* Estilo para tablet */
+@media only screen and (min-width:481px) and (max-width:960px) {
+    .bg-img-alunos { background-size: contain;}
+    .borda-inscricao, .det-titulo::after{width:auto;}
+}
+
+
+/* Estilo para smartphone */
+@media only screen and (max-width:480px) {
+    *{text-align: center;}
+    .titulo-sobre {transform: none; position: initial; bottom: auto; left: auto;}
+    .bg-img-alunos{background: url(https://paulajunior.com/dev/opportunities/wp-content/uploads/2019/09/img-bg-alunos2-responsivo.jpg) no-repeat top center;}
+    .borda-inscricao, .det-titulo::after{width:auto;}
+
 }
